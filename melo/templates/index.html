@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+
+    <title>doc</title>
+  </head>
+  <body>
+    {% load static %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MelodyVerse</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!--- Carousel -->
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="{%static '/musicbeats/image3.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="{% static '/musicbeats/image.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/musicbeats/image2.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- cards -->
+<h2 style="padding-left: 7%; padding-top: 2%;">Fresh New Music</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/radio.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Trending Now</h5>
+          <p class="card-text">Most trending hindi songs.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/audience.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">New in Dance</h5>
+          <p class="card-text">Latest floor fillers to kick start your party.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/girl.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">New music Friday</h5>
+          <p class="card-text">Popular hindi songs from popular music artist.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Recommanded for Today</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/highheels.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">High Heels</h5>
+          <p class="card-text">Guru Randhawa.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/competition.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">No Competition</h5>
+          <p class="card-text">Jass Manak.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/naah.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Naah</h5>
+          <p class="card-text">Hardy Sandhu.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Popular New Realse</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/lutt.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lutt Putt gaya</h5>
+          <p class="card-text">Pritam , Arijit singh , IP singh.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/newlife.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">New Life</h5>
+          <p class="card-text">KING.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/kali.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kali Kali Zulfon Ke</h5>
+          <p class="card-text">Nushrat fateh Ali khan , Jubin Nautiyal, Rochak Kohli.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Your Top Mixez</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/neha.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Neha Kakkar mix</h5>
+          <p class="card-text">Badshah, Yo Yo Honey Singh, Meet bros Anjjan.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/mika.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mica singh mix</h5>
+          <p class="card-text">Neha Kakkar, Yo Yo Honey Singh, Meet Bros Anjjan.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/arijit.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arijit singh mix</h5>
+          <p class="card-text">Pritam , Jubin Nautiyal.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Throwback</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/00s.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">All out 00s Hindi</h5>
+          <p class="card-text">Bollywood songs that rule at Y2K decade.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/90s.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">90s Dance Bollywood</h5>
+          <p class="card-text">Get jiggy with 90s 'dhinchak'.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/80s.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">80s Romantic</h5>
+          <p class="card-text">Bollywood romantic era.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Popular Radio</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/arijitradio.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Arijit Singh Radio</h5>
+          <p class="card-text">With Neha Kakkar,Pritam & more.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/sidradio.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Siddhu Moosewala Radio</h5>
+          <p class="card-text">With Ammy Virk,Karan Aujla & more</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/yoradio.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">YO YO Honey Singh Radio</h5>
+          <p class="card-text">With Imran Khan, Badshah & more.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">Best of Artist's</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/ispritam.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">This is Pritam</h5>
+          <p class="card-text">This is Pritam,essential tracks,all in one Playlist.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/ismika.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">This is Mika Singh</h5>
+          <p class="card-text">This is Mika singh,essential tracks.All in one Playlist.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/isbadshah.jpg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">This is Badshah</h5>
+          <p class="card-text">This is Badshah,essential tracks.All in one Playlist.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <h2 style="padding-left: 7%; padding-top: 2%;">India's Best</h2>
+      <div class="row" style="padding-top: 2%; padding-left: 7%;">
+
+        <div style="padding-left: 2%;">
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/diljit.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Punjabi 101</h5>
+          <p class="card-text">Ultimate 101 Punjabi Hits with Diljit Dosanjh</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+
+      <div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/central.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bollywood Central</h5>
+          <p class="card-text">Bollywood Central,jab bhi baje to sidha dil ke center mein lage.</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+
+<div style="padding-left: 2%;"></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{% static '/musicbeats/rap91.jpeg'%}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rap 91</h5>
+          <p class="card-text">India's rap scene. Cover - Raftaar</p>
+          <a href="#" class="btn btn-primary">Listen Now</a>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
